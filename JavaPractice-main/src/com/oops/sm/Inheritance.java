@@ -33,18 +33,19 @@ public class Inheritance {
 	}
 	
 	public static void main(String []args) {
-		Child obj = new Child();
+		Parent obj = new Child();
 		
 		System.out.println(obj.daughter);
 		
 		System.out.println(obj.daughter1);
 		
-		System.out.println(obj.daughter2);
+		//System.out.println(obj.daughter2);
 		
-		System.out.println(((Parent)obj).daughter);
+		System.out.println(((Child)obj).daughter2);
 		
 		obj.fun();
 		obj.fun1();
-		obj.fun2();
-	}
+		((Child)obj).fun2(); // Compiler Error Will Occurs , because compiler Parent(on LHS) is not having fun2 in it's class
+		//To avoid this error we can TYPECAST Child
+	}	
 }
