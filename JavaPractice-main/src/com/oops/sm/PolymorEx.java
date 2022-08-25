@@ -39,14 +39,14 @@ public class PolymorEx {
 		System.out.println(obj.daughter); //Parent has daughter
 		
 		System.out.println(obj.daughter1); // Parent has daughter1		
-		System.out.println(obj.daughter2); // Parent do not have daughter2
+		//System.out.println(obj.daughter2); // Parent do not have daughter2
 		
-		
+		System.out.println(((Child)obj).daughter2);// works fine with Typecasting
 
 		
 		obj.fun(); // Parent has fun
 		obj.fun1(); //Parent has fun1
-		obj.fun2(); // Parent do not have fun2
+//		obj.fun2(); // Parent do not have f
 
 	}	
 }
