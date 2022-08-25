@@ -34,17 +34,18 @@ public class PolymorEx {
 	}
 	
 	public static void main(String []args) {
-		Parent obj = new Parent();
+		Child obj = new Child();
 		
-		System.out.println(obj.daughter); // will pass
+		System.out.println(obj.daughter); // resolve by ref==2
 		
 		System.out.println(obj.daughter1); // will pass
 		
-		System.out.println(obj.daughter2); // will not pass
+		System.out.println(obj.daughter2); // will not pass 
+		
 		
 
 		
-		obj.fun(); // will pass
+		obj.fun(); // resolve by ref=="Child's function" --> C overriden P's fun
 		obj.fun1(); // will pass
 		obj.fun2(); // will not pass
 
