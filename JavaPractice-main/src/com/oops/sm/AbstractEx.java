@@ -21,13 +21,7 @@ public class AbstractEx {
 		String carType;
 		int price;
 
-
-
-		public CarCompany(String carType2, int price2) {
-			// TODO Auto-generated constructor stub
-		}
-
-		void CarCompany(String carType, int type) {
+		 CarCompany(String carType, int type) {
 
 			this.carType = carType;
 			this.price = price;
@@ -68,4 +62,22 @@ public class AbstractEx {
 		}
 
 	}
+	
+	static  class Mercedes extends CarCompany {
+
+		String royal;
+		
+		Mercedes(String royal, String carType , int price){
+		
+			super(carType , price);
+			this.royal= royal;
+		}
+			
+//		void Millege() {
+//			System.out.println("Car's price is "+price);
+//		}
+//      if we don't write this Millege function then we must have to declare a class as Abstract
+
+	}
+
 }
