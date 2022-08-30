@@ -73,7 +73,7 @@ public class AbstractEx {
 			this.royal= royal;
 		}
 			
-//		void Millege() {
+//		void Millege() {	
 //			System.out.println("Car's price is "+price);
 //		}
 //      if we don't write this Millege function then we must have to declare a class as Abstract
