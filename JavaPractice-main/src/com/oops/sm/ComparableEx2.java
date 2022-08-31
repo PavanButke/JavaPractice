@@ -1,6 +1,9 @@
 package com.oops.sm;
 
-import java.util.Arrays;
+
+import java.util.*;
+
+
 
 public class ComparableEx2 {
 	
@@ -12,12 +15,15 @@ public class ComparableEx2 {
 		cars[2] = new Car(100,1200,"C");
 		cars[3] = new Car(2100,100,"D");
 		
-		Arrays.sort(cars);
-		for(Car car: cars) {
-			System.out.println(car); 
-		}
+		//Arrays.sort(cars);
+
 		
 		//This will not work as As cars can not be compared
+		// As we know that  ArrayList and PriorityQueue can implement the Sorting , we can use Pq for comparing here
+		PriorityQueue<Car> pq = new PriorityQueue<>();
+		for(Car car: cars) {	
+			pq.add(car);
+		}
 	}
 	
 	static class Car{
@@ -35,8 +41,6 @@ public class ComparableEx2 {
 		public String toString() {
 			return "Car [speed=" + speed + ", price=" + price + ", name=" + name + "]";
 		}
-		
-		
 	}
 	
 }
