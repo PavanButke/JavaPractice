@@ -1,9 +1,11 @@
-import java.io.*;
+package com.oops.sm;
+
 import java.util.*;
+import java.io.*;
 
+public class ComparableEx2 {
 
-class ComparableEx2 {
-	public static void main(String args[]){
+public static void main(String []args){
 
       
     Car[] cars = new Car[5];
@@ -66,9 +68,6 @@ class ComparableEx2 {
     public int compare(Car c1, Car c2){
       return c1.speed - c2.speed;
     }
+
   }
-
-
- 
-
 }
